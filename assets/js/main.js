@@ -2,7 +2,7 @@ let services = {
   corporate : 'We are the fastest growing corporate shifter in India and Big brands trust us for their shifting needs.',
   household : 'Shifting to new house?<br> Well we are here to help you to shift with extra care.',
   packing : 'You name it.<br>We pack and ship it.<br>Right at your doorstep.',
-  car : 'Want your cars to be transported somewhere else?<br>Guess what, We do that to.',
+  car : 'Want your cars to be transported somewhere else?<br>Guess what, We do that too.',
   transport : 'We have partenered with the best transportation services in India and we operate pan India.',
   warehouse : 'We are here for all your warehousing needs as well.',
 }
@@ -67,23 +67,6 @@ function showRev(){
     }
   },3000);
 }
-
-let mobNumber = document.getElementById('mobNumber');
-mobNumber.addEventListener('input',validateMobNumber);
-function validateMobNumber(){
-  if(Number(mobNumber.value) === NaN){
-    console.log('no. nhi hai')
-  }
-}
-
-let submitBtn = document.getElementById('submitBtn');
-submitBtn.addEventListener('click',validate)
-function validate(){
-  if(mobNumber.val != Number){
-    console.log('not a numb')
-  }
-}
-
 
 function showNav(){
   let navigation = document.getElementById('navigation');

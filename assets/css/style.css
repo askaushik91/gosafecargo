@@ -6,23 +6,24 @@
     list-style:none;
     text-decoration:none;
 }
-body {width:100%;}
+
+
 .container {width:100%;max-width:1170px;margin:0 auto;}
 
 
 /*Header Styles*/
-#headerBlock {background-color:#363538;color:white;position:fixed;width:100%;}
+#headerBlock {background-color:#408697;color:white;position:fixed;width:100%;}
 #headerBlock .container{display:flex;justify-content:space-between;align-items:center;padding:20px 20px;}
 #headerBlock .container .rightHeader ul {display:flex;gap:25px;}
 #headerBlock .container .rightHeader ul li a{color:white;}
-#headerBlock .container .rightHeader ul li a:hover{color:#408697}
+#headerBlock .container .rightHeader ul li a:hover{color:black;}
 #hamburger {font-size:20px;margin-right:10px;color:white;display:none;}
 
 /*Banner Styles*/
-#bannerBlock {background-color:#badfe7;}
-#bannerBlock .container {display:flex;justify-content:space-evenly;align-items:center;height:90vh;}
+#bannerBlock {background-color:#caebf2;padding-top:0px;padding:150px 0;}
+#bannerBlock .container {display:flex;justify-content:space-evenly;align-items:center;}
 #bannerBlock .container .bannerImg img{width:400px;object-fit:cover;border-radius:50px;box-shadow:5px 5px 25px #1e1b1b;}
-#bannerBlock .container .bannerImg h1{text-align:center;color:black;margin-bottom:30px;}
+#bannerBlock .container .bannerImg h1{text-align:center;color:black;}
 #bannerBlock .container .bannerForm form {background-color:#408697;color:white;padding:50px 40px;border-radius:30px;box-shadow:5px 5px 25px #1e1b1b;width:300px;}
 #bannerBlock .container .bannerForm form h2{margin-bottom:30px;}
 #bannerBlock .container .bannerForm form label {display:inline-block;width:100px;margin-bottom:7px;}
@@ -32,8 +33,8 @@ body {width:100%;}
 #bannerBlock .container .bannerForm form button:active {background-color:#408697;}
 
 /*Services Styles*/
-#serBlock {background-color:#c2edce;}
-#serBlock .container {display:flex;justify-content:space-evenly;align-items:center;height:90vh;}
+#serBlock {background-color:#f6f6f2}
+#serBlock .container {display:flex;justify-content:space-evenly;align-items:center;padding:80px 0;}
 #serBlock .container .services h1{text-align:center;margin-bottom:25px;}
 #serBlock .container .services #serList span {display:block;text-align:center;background-color:#408697;margin:10px;padding:10px;border-radius:10px;transition:all 1s;}
 #serBlock .container .services #serList span:hover {background-color:#badfe7;cursor:pointer;box-shadow:5px 5px 25px #1e1b1b;}
@@ -41,70 +42,51 @@ body {width:100%;}
 #serBlock .container #serTab h2{margin-bottom:15px;}
 
 /*Testimonials Styles*/
-#testBlock {background-color:lightslategray;text-align:center;}
-#testBlock .container {display:flex;justify-content:space-evenly;align-items:center;height:50vh;}
+#testBlock {background-color:#caebf2;text-align:center;}
+#testBlock .container {display:flex;justify-content:space-evenly;align-items:center;padding:150px 0;}
 #testBlock .container .custRev {background-color: #fff;width:400px;height:150px; padding:30px;border-radius:30px;box-shadow:5px 5px 25px #1e1b1b;text-align:center;}
 #testBlock .container .custRev h2 {margin-bottom:15px;}
 
 
 /*Pre Footer Styles*/
 #preFooterBlock {background-color:#f6f6f2;}
-#preFooterBlock .container {display:flex;justify-content:space-evenly;align-items:center;padding:100px 0px;}
+#preFooterBlock .container {display:flex;justify-content:space-evenly;align-items:center;padding:40px 0px;}
 #preFooterBlock .container a{color:#1e1b1b}
 #preFooterBlock .container a:hover{color:#408697}
 
-/*Pre Footer Styles*/
-#footerBlock {background-color:#363538;}
+/*Footer Styles*/
+#footerBlock {background-color:#408697;}
 #footerBlock .container {text-align:center;padding:20px 0px;color:white;}
 
+/*About Page*/
+.aboutParagraph {padding:40px;}
 
 
+/*Responsive Design*/
 
-/* #23383b
-#246068
-#3aa1aa
-#e29000
-#fadb67 */
+@media only screen and (max-width:768px){
+    #bannerBlock {padding-top:120px;padding-bottom:90px;}
+    .container{flex-direction:column-reverse;gap:60px;}
+    #serBlock .container {flex-direction:column;}
+    #headerBlock .container, #preFooterBlock .container{flex-direction:row;}
+    #testBlock .container {padding:80px 0px;}
 
-@media only screen and (width>900px){
-    .navigation {display:block;}
 }
 
-@media only screen and (max-width:900px){
+@media only screen and (max-width:600px){
     .navigation {display:none;}
     #hamburger {display:inline-block;}
-    /* #headerBlock .container .rightHeader nav{display:none;} */
     #headerBlock .container {position:relative;}
-    #headerBlock .container .rightHeader ul {background:#363538;display:block;position:absolute;right:0px;padding:40px;}
-
-    #bannerBlock .container .bannerImg h1{margin-top:60px;}
-
-    #bannerBlock .container{flex-direction:column-reverse;}
-    #testBlock .container{flex-direction:column-reverse;}
-    #serBlock .container{flex-direction:column;}
-    
-
-    #serBlock .container .services #serList {display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:center;}
-    #serBlock .container .services #serList span {flex: 1 0 33%;}
+    #headerBlock .container .rightHeader ul {background:#408697;display:block;position:absolute;right:0px;padding:40px;}
 }
 
-
-
 @media only screen and (max-width:425px){
-    
-    #bannerBlock .container{height:85vh;}
-    #serBlock .container{height:60vh;}
-}   
+    #serBlock .container #serTab {width:350px;height:170px;}
+    #testBlock .container .custRev {width:350px;height:150px;}
+}
 
 @media only screen and (max-width:375px){
     #bannerBlock .container .bannerForm form {width:280px;}
-    #bannerBlock .container .bannerForm form input {width:205px;}
-    #serBlock .container #serTab {width:300px;height:150px;}
-    #testBlock .container .custRev {width:300px;height:150px;}
-}
-
-@media only screen and (max-width:320px){
-    #bannerBlock .container .bannerForm form {width:260px;}
     #bannerBlock .container .bannerForm form input {width:185px;}
     #serBlock .container #serTab {width:260px;height:170px;}
     #testBlock .container .custRev {width:260px;height:150px;}
