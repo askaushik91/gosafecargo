@@ -24,9 +24,9 @@ let reviews = [
   },
 ]
 
-
 let i=0; // For review automatic movement
 showRev();
+
 
 let serList = document.getElementsByClassName('indiService');
 let serTab = document.getElementById('serTab');
@@ -42,7 +42,6 @@ Array.from(serList).forEach(function(element){
 })
 
 function showService(e){
-  console.log(e.target.id)
   currElem = document.getElementById(e.target.id);
   currElemText = currElem.innerText;
   serTabHead.innerText = currElemText;
@@ -76,3 +75,4 @@ function showNav(){
     navigation.style.display = "block";
   }
 }
+

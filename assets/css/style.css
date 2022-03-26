@@ -59,7 +59,24 @@
 #footerBlock .container {text-align:center;padding:20px 0px;color:white;}
 
 /*About Page*/
+.aboutBanner {padding:260px 0px !important;}
 .aboutParagraph {padding:40px;}
+
+/*Contact Page*/
+.contactBanner {padding:360px 0 !important;}
+.contactBanner .container h1 {margin-bottom:20px;}
+.contactBanner .container .col {height:190px;}
+.contactBanner ul li i {margin-right:10px;width:20px;}
+.contactBanner ul li a {color:black;}
+.contactBanner ul li a:hover {color:grey;}
+.contactBanner ul li:nth-of-type(2) a:hover {color:#ff8800;}
+.contactBanner ul li:nth-of-type(3) a:hover {color:#00acee;}
+.contactBanner ul li:nth-of-type(4) a:hover {color:#8a3ab9;}
+.contactBanner ul li:nth-of-type(5) a:hover {color:#FF0000;}
+
+/*Gallery Page*/
+.galleryBanner {padding:320px 0 !important;}
+
 
 
 /*Responsive Design*/
@@ -71,6 +88,14 @@
     #headerBlock .container, #preFooterBlock .container{flex-direction:row;}
     #testBlock .container {padding:80px 0px;}
 
+    /*Other Pages*/
+
+    .contactBanner {padding:130px 0 !important;}
+    .contactBanner .container {flex-direction:column;}
+    .contactBanner address {text-align:center;}
+    .galleryBanner {padding:210px 0 !important;}
+    .galleryBanner .container {flex-direction:column;}
+
 }
 
 @media only screen and (max-width:600px){
@@ -78,16 +103,29 @@
     #hamburger {display:inline-block;}
     #headerBlock .container {position:relative;}
     #headerBlock .container .rightHeader ul {background:#408697;display:block;position:absolute;right:0px;padding:40px;}
+
+    /*Other Pagees*/
+    .aboutBanner {padding:210px 0px !important;}
+    .galleryBanner {padding:180px 0 !important;}
 }
 
 @media only screen and (max-width:425px){
     #serBlock .container #serTab {width:350px;height:170px;}
     #testBlock .container .custRev {width:350px;height:150px;}
+
+    /*Other Pagees*/
+    .aboutBanner {padding:170px 0px !important;}
+
 }
 
 @media only screen and (max-width:375px){
     #bannerBlock .container .bannerForm form {width:280px;}
-    #bannerBlock .container .bannerForm form input {width:185px;}
+    #bannerBlock .container .bannerForm form input {width:200px;}
     #serBlock .container #serTab {width:260px;height:170px;}
     #testBlock .container .custRev {width:260px;height:150px;}
+
+    /*Other Pagees*/
+    .galleryBanner .bannerImg img{width:300px !important;}
+    .aboutBanner {padding:120px 0px !important;}
+    .galleryBanner {padding:175px 0 !important;}
 }
