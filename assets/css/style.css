@@ -8,43 +8,43 @@
 }
 
 
-.container {width:100%;max-width:1170px;margin:0 auto;}
+.container {width:95%;max-width:1170px;margin:0 auto;display:flex;}
 
 
 /*Header Styles*/
 #headerBlock {background-color:#408697;color:white;position:fixed;width:100%;}
-#headerBlock .container{display:flex;justify-content:space-between;align-items:center;padding:20px 20px;}
+#headerBlock .container{justify-content:space-between;align-items:center;padding:20px 0;}
 #headerBlock .container .rightHeader ul {display:flex;gap:25px;}
 #headerBlock .container .rightHeader ul li a{color:white;}
 #headerBlock .container .rightHeader ul li a:hover{color:black;}
 #hamburger {font-size:20px;margin-right:10px;color:white;display:none;}
 
 /*Banner Styles*/
-#bannerBlock {background-color:#caebf2;padding-top:0px;padding:150px 0;}
-#bannerBlock .container {display:flex;justify-content:space-evenly;align-items:center;}
-#bannerBlock .container .bannerImg img{width:400px;object-fit:cover;border-radius:50px;box-shadow:5px 5px 25px #1e1b1b;}
+#bannerBlock {background-color:#caebf2;padding-top:0px;}
+#bannerBlock .container {display:flex;justify-content:space-evenly;align-items:center;min-height:90vh;}
+#bannerBlock .container .bannerImg img{width:100%;max-width:400px;object-fit:cover;border-radius:50px;box-shadow:5px 5px 25px #1e1b1b;}
 #bannerBlock .container .bannerImg h1{text-align:center;color:black;}
-#bannerBlock .container .bannerForm form {background-color:#408697;color:white;padding:50px 40px;border-radius:30px;box-shadow:5px 5px 25px #1e1b1b;width:300px;}
+#bannerBlock .container .bannerForm form {background-color:#408697;color:white;padding:50px 40px;border-radius:30px;box-shadow:5px 5px 25px #1e1b1b;max-width:300px;width:100%;}
 #bannerBlock .container .bannerForm form h2{margin-bottom:30px;}
-#bannerBlock .container .bannerForm form label {display:inline-block;width:100px;margin-bottom:7px;}
-#bannerBlock .container .bannerForm form input {width:220px;margin-bottom:15px;border-radius:5px;padding:3px;border:none;}
+#bannerBlock .container .bannerForm form label {display:inline-block;width:100%;max-width:100px;margin-bottom:7px;}
+#bannerBlock .container .bannerForm form input {width:100%;max-width:220px;margin-bottom:15px;border-radius:5px;padding:3px;border:none;}
 #bannerBlock .container .bannerForm form button {background-color:white;margin-top:15px;padding:4px 8px;border-radius:10px;border:2px solid transparent;transition:border 0.5s, background-color 0.2s, color 0.5s; color:#408697;}
 #bannerBlock .container .bannerForm form button:hover {border:2px solid black;cursor:pointer;color:black;}
 #bannerBlock .container .bannerForm form button:active {background-color:#408697;}
 
 /*Services Styles*/
 #serBlock {background-color:#f6f6f2}
-#serBlock .container {display:flex;justify-content:space-evenly;align-items:center;padding:80px 0;}
+#serBlock .container {display:flex;justify-content:space-evenly;align-items:center;min-height:60vh;}
 #serBlock .container .services h1{text-align:center;margin-bottom:25px;}
-#serBlock .container .services #serList span {display:block;text-align:center;background-color:#408697;margin:10px;padding:10px;border-radius:10px;transition:all 1s;}
-#serBlock .container .services #serList span:hover {background-color:#badfe7;cursor:pointer;box-shadow:5px 5px 25px #1e1b1b;}
-#serBlock .container #serTab {background-color: #fff;width:400px;height:150px;padding:30px;border-radius:30px;box-shadow:5px 5px 25px #1e1b1b;text-align:center;}
+#serBlock .container .services #serList span {color:white;display:block;text-align:center;background-color:#408697;margin:10px;padding:10px;border-radius:10px;transition:all 1s;}
+#serBlock .container .services #serList span:hover {color:black;background-color:#badfe7;cursor:pointer;box-shadow:5px 5px 25px #1e1b1b;}
+#serBlock .container #serTab {background-color: #fff;width:100%;max-width:400px;min-height:150px;padding:30px;border-radius:30px;box-shadow:5px 5px 25px #1e1b1b;text-align:center;}
 #serBlock .container #serTab h2{margin-bottom:15px;}
 
 /*Testimonials Styles*/
 #testBlock {background-color:#caebf2;text-align:center;}
-#testBlock .container {display:flex;justify-content:space-evenly;align-items:center;padding:150px 0;}
-#testBlock .container .custRev {background-color: #fff;width:400px;height:150px; padding:30px;border-radius:30px;box-shadow:5px 5px 25px #1e1b1b;text-align:center;}
+#testBlock .container {display:flex;justify-content:space-evenly;align-items:center;min-height:50vh;}
+#testBlock .container .custRev {background-color: #fff;width:100%;max-width:400px;min-height:150px; padding:30px;border-radius:30px;box-shadow:5px 5px 25px #1e1b1b;text-align:center;}
 #testBlock .container .custRev h2 {margin-bottom:15px;}
 
 
@@ -59,13 +59,12 @@
 #footerBlock .container {text-align:center;padding:20px 0px;color:white;}
 
 /*About Page*/
-.aboutBanner {padding:260px 0px !important;}
-.aboutParagraph {padding:40px;}
+.aboutParagraph {padding:30px;}
 
 /*Contact Page*/
-.contactBanner {padding:360px 0 !important;}
+.contactBanner .container {gap:30px !important;}
 .contactBanner .container h1 {margin-bottom:20px;}
-.contactBanner .container .col {height:190px;}
+.contactBanner .container .col {min-height:150px;}
 .contactBanner ul li i {margin-right:10px;width:20px;}
 .contactBanner ul li a {color:black;}
 .contactBanner ul li a:hover {color:grey;}
@@ -74,58 +73,22 @@
 .contactBanner ul li:nth-of-type(4) a:hover {color:#8a3ab9;}
 .contactBanner ul li:nth-of-type(5) a:hover {color:#FF0000;}
 
-/*Gallery Page*/
-.galleryBanner {padding:320px 0 !important;}
 
+@media screen and (max-width:812px)
+{
+    #headerBlock .container, #preFooterBlock .container {flex-direction:row;}
+    .container {flex-direction:column;min-height:auto!important;gap:50px;}
+    #bannerBlock {padding-top:100px !important;;}
+    #bannerBlock, #serBlock, #testBlock {padding:50px 0px;}
+    #bannerBlock .container, #testBlock .container {flex-direction:column-reverse;}
 
-
-/*Responsive Design*/
-
-@media only screen and (max-width:768px){
-    #bannerBlock {padding-top:120px;padding-bottom:90px;}
-    .container{flex-direction:column-reverse;gap:60px;}
-    #serBlock .container {flex-direction:column;}
-    #headerBlock .container, #preFooterBlock .container{flex-direction:row;}
-    #testBlock .container {padding:80px 0px;}
-
-    /*Other Pages*/
-
-    .contactBanner {padding:130px 0 !important;}
-    .contactBanner .container {flex-direction:column;}
-    .contactBanner address {text-align:center;}
-    .galleryBanner {padding:210px 0 !important;}
-    .galleryBanner .container {flex-direction:column;}
-
-}
-
-@media only screen and (max-width:600px){
+    /* For Hamburger Menu*/
     .navigation {display:none;}
     #hamburger {display:inline-block;}
     #headerBlock .container {position:relative;}
     #headerBlock .container .rightHeader ul {background:#408697;display:block;position:absolute;right:0px;padding:40px;}
-
-    /*Other Pagees*/
-    .aboutBanner {padding:210px 0px !important;}
-    .galleryBanner {padding:180px 0 !important;}
-}
-
-@media only screen and (max-width:425px){
-    #serBlock .container #serTab {width:350px;height:170px;}
-    #testBlock .container .custRev {width:350px;height:150px;}
-
-    /*Other Pagees*/
-    .aboutBanner {padding:170px 0px !important;}
-
-}
-
-@media only screen and (max-width:375px){
-    #bannerBlock .container .bannerForm form {width:280px;}
-    #bannerBlock .container .bannerForm form input {width:200px;}
-    #serBlock .container #serTab {width:260px;height:170px;}
-    #testBlock .container .custRev {width:260px;height:150px;}
-
-    /*Other Pagees*/
-    .galleryBanner .bannerImg img{width:300px !important;}
-    .aboutBanner {padding:120px 0px !important;}
-    .galleryBanner {padding:175px 0 !important;}
+    
+    /*Other Pages CSS*/
+    .galleryBanner .container, .contactBanner .container {flex-direction:column !important;}
+    .contactBanner address {text-align:center;}
 }
