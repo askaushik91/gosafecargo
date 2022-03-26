@@ -5,12 +5,12 @@ function showImages(){
     let image = document.getElementById('image');
     setInterval(function(){
       if(i<3){
-        image.src = `/gosafe/assets/media/images/${images[i]}`;
+        image.src = `/assets/media/images/${images[i]}`;
         i++;
       }
       else{
         i = 0;
-        image.src = '/gosafe/assets/media/images/one.jpeg';
+        image.src = '/assets/media/images/one.jpeg';
       }
     },3000);
   }
