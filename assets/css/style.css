@@ -56,7 +56,7 @@
 
 /*Footer Styles*/
 #footerBlock {background-color:#408697;text-align:center;}
-#footerBlock .container {padding:20px 0px;color:white;}
+#footerBlock .container {justify-content:center;padding:20px 0px;color:white;}
 
 /*About Page*/
 .aboutParagraph {padding:30px;}
@@ -92,5 +92,8 @@
     
     /*Other Pages CSS*/
     .galleryBanner .container, .contactBanner .container {flex-direction:column !important;}
+    .galleryBanner .container {min-height:60vh !important;;}
+    .contactBanner .container {min-height:76vh !important;}
+    .aboutBanner .container {min-height:60vh !important;}
     .contactBanner address {text-align:center;}
 }

@@ -38,7 +38,7 @@ let custReply = document.getElementById('custReply');
 
 Array.from(serList).forEach(function(element){
     element.addEventListener('mouseover',showService);
-    element.addEventListener('blur',resetService);
+    element.addEventListener('mouseleave',resetService);
 })
 
 function showService(e){
@@ -50,6 +50,7 @@ function showService(e){
 
 function resetService(){
   serTabHead.innerText = 'Top Notch Services';
+  serTabContent.innerText = 'Helping People Shift Since 2019';
 }
 
 function showRev(){
@@ -67,11 +68,18 @@ function showRev(){
   },3000);
 }
 
-function showNav(){
-  let navigation = document.getElementById('navigation');
-  if (navigation.style.display === "block") {
-    navigation.style.display = "none";
-  } else {
-    navigation.style.display = "block";
-  }
+
+function showSerTab(){
+  setInterval(function(){
+    if(i<5){
+      custName.innerText = reviews[i].name;
+      custReply.innerText = reviews[i].reply;
+      i++;
+    }
+    else{
+      i = 0;
+      custName.innerText = 'Krishna';
+      custReply.innerText = "The process was totally hasslefree. I'm glad that I chose gosafe for this.";
+    }
+  },3000);
 }
