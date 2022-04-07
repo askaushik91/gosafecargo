@@ -14,6 +14,7 @@
 /*Header Styles*/
 #headerBlock {background-color:#408697;color:white;position:fixed;width:100%;}
 #headerBlock .container{justify-content:space-between;align-items:center;padding:20px 0;}
+#headerBlock .container .anime {transition:all 2s;}
 #headerBlock .container .rightHeader ul {display:flex;gap:25px;}
 #headerBlock .container .rightHeader ul li a{color:white;}
 #headerBlock .container .rightHeader ul li a:hover{color:black;}
@@ -24,7 +25,7 @@
 #bannerBlock .container {display:flex;justify-content:space-evenly;align-items:center;min-height:90vh;}
 #bannerBlock .container .bannerImg img{width:100%;max-width:400px;object-fit:cover;border-radius:50px;box-shadow:5px 5px 25px #1e1b1b;}
 #bannerBlock .container .bannerImg h1{text-align:center;color:black;}
-#bannerBlock .container .bannerForm form {background-color:#408697;color:white;padding:50px 40px;border-radius:30px;box-shadow:5px 5px 25px #1e1b1b;max-width:300px;width:100%;}
+#bannerBlock .container .bannerForm form {background-color:#408697;color:white;padding:50px 40px;border-radius:30px;box-shadow:5px 5px 25px #1e1b1b;max-width:300px;width:100%;animation:borderAnimation 10s infinite;}
 #bannerBlock .container .bannerForm form h2{margin-bottom:30px;}
 #bannerBlock .container .bannerForm form label {display:inline-block;width:100%;max-width:100px;margin-bottom:7px;}
 #bannerBlock .container .bannerForm form input {width:100%;max-width:220px;margin-bottom:15px;border-radius:5px;padding:3px;border:none;}
