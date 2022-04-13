@@ -42,6 +42,8 @@
 #serBlock .container #serTab {background-color: #fff;width:100%;max-width:400px;min-height:150px;padding:30px;border-radius:30px;box-shadow:5px 5px 25px #1e1b1b;text-align:center;}
 #serBlock .container #serTab h2{margin-bottom:15px;}
 
+.serActive {color:black;background-color:#badfe7;box-shadow:5px 5px 25px #1e1b1b;transition:2s;}
+
 /*Testimonials Styles*/
 #testBlock {background-color:#caebf2;text-align:center;}
 #testBlock .container {display:flex;justify-content:space-evenly;align-items:center;min-height:50vh;}
@@ -61,6 +63,17 @@
 
 /*About Page*/
 .aboutParagraph {padding:30px;}
+
+/*Gallery Page*/
+@keyframes fadeIn {
+    0% {opacity:0;}
+    50% {opacity:1;}
+    100% {opacity:0;}
+}
+
+/* #galleryImage {animation: fadeIn 5s infinite;} */
+#galleryImage {opacity:1;transition:opacity 1s;}
+#galleryImage.fadeOut {opacity:0;}
 
 /*Contact Page*/
 .contactBanner {padding:40px 0px;}
@@ -93,8 +106,8 @@
     
     /*Other Pages CSS*/
     .galleryBanner .container, .contactBanner .container {flex-direction:column !important;}
-    .galleryBanner .container {min-height:60vh !important;;}
-    .contactBanner .container {min-height:76vh !important;}
-    .aboutBanner .container {min-height:60vh !important;}
+    .galleryBanner .container {min-height:64vh !important;;}
+    .contactBanner .container {min-height:80vh !important;}
+    .aboutBanner .container {min-height:64vh !important;}
     .contactBanner address {text-align:center;}
 }
