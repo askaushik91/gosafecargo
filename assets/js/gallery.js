@@ -25,10 +25,10 @@ let imagesArray = ['two.jpeg','three.jpeg','four.jpeg','one.jpeg'],
 function showImages(){
     
     setInterval(function(){
-      imageElem.className = 'fadeOut';
+      // imageElem.className = 'fadeOut';
       setTimeout(function(){
         imageElem.src = `assets/media/images/${imagesArray[imgCounter]}`;
-        imageElem.className = '';
+        // imageElem.className = '';
       },1000);
       imgCounter++;
       if(imgCounter==imagesArray.length){
@@ -38,4 +38,4 @@ function showImages(){
 
   }
 
-window.onload = showImages();
+showImages();

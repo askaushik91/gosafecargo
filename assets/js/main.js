@@ -98,7 +98,7 @@ function serviceAutoStop(){
 
 function resetService(){
   serTabHead.innerText = 'Top Notch Services';
-  serTabContent.innerText = 'Helping People Shift Since 2019';
+  serTabContent.innerHTML = 'Helping People Shift<br/>Since 2019';
 }
 
 function showRev(){
