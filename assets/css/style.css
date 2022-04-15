@@ -78,8 +78,8 @@
 /*Contact Page*/
 .contactBanner {padding:40px 0px;}
 .contactBanner .container {gap:30px !important;}
-.contactBanner .container address a{color:#EA9A28;transition:color 0.5s;}
-.contactBanner .container address a:hover{color:black;}
+.contactBanner .container address a{color:black;transition:color 0.5s;}
+.contactBanner .container address a:hover{color:#EA9A28;}
 .contactBanner .container h1 {margin-bottom:20px;}
 .contactBanner .container .col {min-height:150px;}
 .contactBanner ul li i {margin-right:10px;width:20px;}
