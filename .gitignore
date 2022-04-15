@@ -1,3 +1,6 @@
+.gitignore
 .DS_Store
 main.scss
 particle.css
+main.css
+main.css.map

@@ -30,9 +30,9 @@
 #bannerBlock .container .bannerForm form h2{margin-bottom:30px;}
 #bannerBlock .container .bannerForm form label {display:inline-block;width:100%;max-width:100px;margin-bottom:7px;}
 #bannerBlock .container .bannerForm form input {width:100%;max-width:220px;margin-bottom:15px;border-radius:5px;padding:3px;border:none;}
-#bannerBlock .container .bannerForm form button {background-color:white;margin-top:15px;padding:4px 8px;border-radius:10px;border:2px solid transparent;transition:border 0.5s, background-color 0.2s, color 0.5s, border-radius 1s; color:black;}
-#bannerBlock .container .bannerForm form button:hover {border:2px solid #CDF6FF;cursor:pointer;color:black;border-radius:20px;}
-#bannerBlock .container .bannerForm form button:active {background-color:#CDF6FF;border:2px solid #CDF6FF;}
+#bannerBlock .container .bannerForm form button {background-color:#2A2F33;border:2px solid white;color:white;margin-top:15px;padding:4px 8px;border-radius:10px;transition:border 0.5s, background-color 0.2s, color 0.5s, border-radius 1s;}
+#bannerBlock .container .bannerForm form button:hover {cursor:pointer;border:2px solid white;background-color:#fff;color:black;}
+#bannerBlock .container .bannerForm form button:active {background-color:#eee;border:2px solid white;color:black;}
 
 /*Services Styles*/
 #serBlock {background-color:#fff}
@@ -40,7 +40,7 @@
 #serBlock .container .services h1{text-align:center;margin-bottom:25px;}
 #serBlock .container .services #serList span {color:white;display:block;text-align:center;background-color:#2A2F33;margin:10px;padding:10px;border-radius:10px;transition:all 1s;}
 #serBlock .container .services #serList span:hover {color:black;background-color:#CDF6FF;cursor:pointer;box-shadow:5px 5px 25px #1e1b1b;}
-#serBlock .container #serTab {background-color:#2A2F33;color:white;width:100%;max-width:400px;min-height:158px;padding:30px;border-radius:30px;box-shadow:5px 5px 25px #1e1b1b;text-align:center;}
+#serBlock .container #serTab {background-color:#2A2F33;color:white;width:100%;max-width:400px;min-height:160px;padding:30px;border-radius:30px;box-shadow:5px 5px 25px #1e1b1b;text-align:center;}
 #serBlock .container #serTab h2{margin-bottom:15px;}
 
 .serActive {color:black;background-color:#badfe7;box-shadow:5px 5px 25px #1e1b1b;transition:2s;}
@@ -48,7 +48,7 @@
 /*Testimonials Styles*/
 #testBlock {background-color:#CDF6FF;text-align:center;}
 #testBlock .container {display:flex;justify-content:space-evenly;align-items:center;min-height:50vh;}
-#testBlock .container .custRev {background-color:#2A2F33;color:white;width:100%;max-width:400px;min-height:150px; padding:30px;border-radius:30px;box-shadow:5px 5px 25px #1e1b1b;text-align:center;}
+#testBlock .container .custRev {background-color:#2A2F33;color:white;width:100%;max-width:400px;min-height:155px; padding:30px;border-radius:30px;box-shadow:5px 5px 25px #1e1b1b;text-align:center;}
 #testBlock .container .custRev h2 {margin-bottom:15px;}
 
 
