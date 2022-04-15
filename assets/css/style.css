@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
 * {
     box-sizing:border-box;
     -moz-box-sizing:border-box;
@@ -5,6 +9,8 @@
     padding:0;
     list-style:none;
     text-decoration:none;
+    font-family: 'Montserrat', sans-serif;
+    outline:none!important;
 }
 
 
@@ -13,54 +19,71 @@
 
 
 /*Header Styles*/
-#headerBlock {background-color:#2A2F33;color:white;position:fixed;width:100%;}
+.sticky {position:fixed;top:0;left:0;z-index:99;}
+
+#headerBlock {background-color:#2A2F33;color:white;width:100%;}
 #headerBlock .container{justify-content:space-between;align-items:center;padding:20px 0;}
-#headerBlock .container .anime {transition:all 2s;}
+#headerBlock .container .leftHeader svg {width:150px;}
 #headerBlock .container .rightHeader ul {display:flex;gap:25px;}
 #headerBlock .container .rightHeader ul li a{color:white;transition:color 0.5s;}
-#headerBlock .container .rightHeader ul li a:hover{color:#EA9A28;}
+#headerBlock .container .rightHeader ul li a:hover{color:#1EB6A9;}
 #hamburger {font-size:20px;margin-right:10px;color:white;display:none;}
 
 /*Banner Styles*/
-#bannerBlock {background-color:#CDF6FF;padding-top:0px;}
-#bannerBlock .container {display:flex;justify-content:space-evenly;align-items:center;min-height:90vh;}
+#bannerBlock {background-color:#1EB6A9;padding-top:0px;background:url(../media/images/industrial-port-container-yard.jpg) no-repeat;background-size:cover;position: relative;background-attachment:fixed;}
+#bannerBlock .overlayBg {position:absolute;width:100%;height:100%;top:0;left:0;background:rgba(0,0,0,.3);z-index:1;}
+#bannerBlock .container {display:flex;justify-content:space-evenly;align-items:center;min-height:90vh;position:relative;z-index:9;}
 #bannerBlock .container .bannerImg img{width:100%;max-width:400px;object-fit:cover;border-radius:50px;box-shadow:5px 5px 25px #1e1b1b;}
-#bannerBlock .container .bannerImg h1{text-align:center;color:black;}
-#bannerBlock .container .bannerForm form {background-color:#2A2F33;color:white;padding:50px 40px;border-radius:30px;box-shadow:5px 5px 25px #1e1b1b;max-width:300px;width:100%;animation:borderAnimation 10s infinite;}
+#bannerBlock .container .bannerImg h1{text-align:center;color:white;font-weight:800;font-size:40px;}
+#bannerBlock .container .bannerForm form {background-color:rgba(24,24,24,.95);color:white;padding:50px 40px;border-radius:10px;box-shadow:5px 5px 25px #1e1b1b;max-width:400px;width:100%;animation:borderAnimation 10s infinite;}
 #bannerBlock .container .bannerForm form h2{margin-bottom:30px;}
-#bannerBlock .container .bannerForm form label {display:inline-block;width:100%;max-width:100px;margin-bottom:7px;}
-#bannerBlock .container .bannerForm form input {width:100%;max-width:220px;margin-bottom:15px;border-radius:5px;padding:3px;border:none;}
-#bannerBlock .container .bannerForm form button {background-color:#2A2F33;border:2px solid white;color:white;margin-top:15px;padding:4px 8px;border-radius:10px;transition:border 0.5s, background-color 0.2s, color 0.5s, border-radius 1s;}
-#bannerBlock .container .bannerForm form button:hover {cursor:pointer;border:2px solid white;background-color:#fff;color:black;}
-#bannerBlock .container .bannerForm form button:active {background-color:#eee;border:2px solid white;color:black;}
+#bannerBlock .container .bannerForm form .formInner ul {display:flex;flex-direction:column;gap:15px;}
+#bannerBlock .container .bannerForm form label {display:inline-block;width:100%;max-width:100%;margin-bottom:7px;}
+#bannerBlock .container .bannerForm form input {width:100%;border-radius:5px;padding:10px 3px;border:none;background:rgba(255,255,255,.1);}
+#bannerBlock .container .bannerForm form button {background-color:#1EB6A9;border:0;color:white;padding:13px 8px;border-radius:5px;transition:border 0.5s, background-color 0.2s, color 0.5s, border-radius 1s;text-transform:uppercase;width:100%;margin-top:10px;}
+#bannerBlock .container .bannerForm form button:hover {cursor:pointer;color:#1EB6A9;background:#181818;}
+#bannerBlock .container .bannerForm form button:active {background-color:#181818;color:#1EB6A9;}
 
 /*Services Styles*/
-#serBlock {background-color:#fff}
-#serBlock .container {display:flex;justify-content:space-evenly;align-items:center;min-height:60vh;}
-#serBlock .container .services h1{text-align:center;margin-bottom:25px;}
-#serBlock .container .services #serList span {color:white;display:block;text-align:center;background-color:#2A2F33;margin:10px;padding:10px;border-radius:10px;transition:all 1s;}
-#serBlock .container .services #serList span:hover {color:black;background-color:#CDF6FF;cursor:pointer;box-shadow:5px 5px 25px #1e1b1b;}
-#serBlock .container #serTab {background-color:#2A2F33;color:white;width:100%;max-width:400px;min-height:160px;padding:30px;border-radius:30px;box-shadow:5px 5px 25px #1e1b1b;text-align:center;}
+#serBlock {background-color:#fff;padding:100px 0px;}
+#serBlock .container:first-child .col {width:100%;}
+#serBlock .container:last-child {gap:30px;}
+#serBlock .container:last-child .col {display:flex;justify-content:left;flex-direction:column;}
+#serBlock .container:last-child .col:first-child {width:100%;max-width:25%;}
+#serBlock .container:last-child .col:last-child {width:100%;max-width:75%;}
+#serBlock .container {display:flex;justify-content:space-evenly;align-items:center;}
+#serBlock .container h1{margin-bottom:25px;font-weight:800;color:#1EB6A9;text-align:left;text-indent:15px}
+#serBlock .container .services #serList {width:100%;display:flex;flex-direction:column;gap:10px;}
+#serBlock .container .services #serList span {color:white;display:block;background-color:#ccc;color:#000;padding:15px 10px;border-radius:5px;transition:all 1s;width:100%;text-transform:uppercase;font-weight:500}
+#serBlock .container .services #serList span:hover, #serBlock .container .services #serList span.activeTab {color:white;background-color:#1EB6A9;cursor:pointer;}
+
+#serBlock .container #serTab .detailInner {width:100%;min-height:350px;background-color:#2A2F33;color:white;padding:30px;border-radius:5px;text-align:center;}
 #serBlock .container #serTab h2{margin-bottom:15px;}
 
 .serActive {color:black;background-color:#badfe7;box-shadow:5px 5px 25px #1e1b1b;transition:2s;}
 
 /*Testimonials Styles*/
-#testBlock {background-color:#CDF6FF;text-align:center;}
-#testBlock .container {display:flex;justify-content:space-evenly;align-items:center;min-height:50vh;}
-#testBlock .container .custRev {background-color:#2A2F33;color:white;width:100%;max-width:400px;min-height:155px; padding:30px;border-radius:30px;box-shadow:5px 5px 25px #1e1b1b;text-align:center;}
-#testBlock .container .custRev h2 {margin-bottom:15px;}
+.testiBlock {width:100%;display:flex;align-items:stretch;background:#1EB6A9;}
+.testiBlock .col {width:50%;display:flex;align-items:left;justify-content:center;flex-direction:column;}
+.testiBlock .col.leftBlck {color:#fff;gap:30px;padding:50px;}
+.testiBlock .col.leftBlck h1 {font-size:40px;font-weight:800;position:relative;padding-bottom:20px;}
+.testiBlock .col.leftBlck h1:after {position:absolute;content:'';left:0;bottom:0;width:100px;height:2px;background:#fff;;}
+.testiBlock .col.leftBlck .custRev {width:100%;min-height:100px;}
+.testiBlock .col.leftBlck .custRev h2 {font-size:25px;}
+.testiBlock .col.leftBlck .custRev p {font-size:20px;}
+.testiBlock .col.rightBlck img {width:100%;}
 
-
-/*Pre Footer Styles*/
-#preFooterBlock {background-color:#f6f6f2;}
-#preFooterBlock .container {display:flex;justify-content:space-evenly;align-items:center;padding:40px 0px;}
-#preFooterBlock .container a{color:#1e1b1b;transition:color 0.5s;}
-#preFooterBlock .container a:hover{color:#EA9A28}
-
-/*Footer Styles*/
-#footerBlock {background-color:#2A2F33;text-align:center;}
-#footerBlock .container {justify-content:center;padding:20px 0px;color:white;}
+#footerBlock {width:100%;background:white;padding:50px;font-weight:500;}
+#footerBlock .container {gap:20px;justify-content:flex-start;text-align:left;}
+#footerBlock .col {width:100%;max-width:33%;}
+#footerBlock .container {justify-content:center;padding:20px 0px;color:#181818;}
+#footerBlock h2 {font-weight:500;font-size:20px;text-transform:uppercase;margin-bottom:10px;}
+#footerBlock h5 {font-weight:500;font-size:16px;text-transform:uppercase;}
+#footerBlock ol {display:flex;gap:10px;margin-bottom:20px;}
+#footerBlock ol li {font-size:18px;}
+#footerBlock ul li {line-height:30px;}
+#footerBlock a {color:#181818;}
+#footerBlock a:hover {color:#1EB6A9;}
 
 /*About Page*/
 .aboutParagraph {padding:30px;}

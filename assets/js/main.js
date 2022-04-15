@@ -115,3 +115,12 @@ function showRev(){
     }
   },3000);
 }
+
+$(document).ready(function(){
+  $(window).scroll(function(){
+      if($(this).scrollTop() > 1){
+          $('#headerBlock').addClass('sticky')
+      }
+      else($('#headerBlock').removeClass("sticky"))
+  });
+});
