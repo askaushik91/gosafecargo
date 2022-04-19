@@ -46,25 +46,20 @@
 
 /*Services Styles*/
 #serBlock {background-color:#fff;padding:100px 0px;}
-#serBlock .container:first-child .col {width:100%;}
-#serBlock .container:last-child {gap:30px;}
-#serBlock .container:last-child .col {display:flex;justify-content:left;flex-direction:column;}
-#serBlock .container:last-child .col:first-child {width:100%;max-width:25%;}
-#serBlock .container:last-child .col:last-child {width:100%;max-width:75%;}
+#serBlock .container #serTab {width:100%;max-width:75%;margin-top:61px;}
 #serBlock .container {display:flex;justify-content:space-evenly;align-items:center;}
-#serBlock .container h1{margin-bottom:25px;font-weight:800;color:#1EB6A9;text-align:left;text-indent:15px}
+#serBlock .container h1{margin-bottom:25px;font-weight:800;color:#1EB6A9;}
 #serBlock .container .services #serList {width:100%;display:flex;flex-direction:column;gap:10px;}
 #serBlock .container .services #serList span {color:white;display:block;background-color:#ccc;color:#000;padding:15px 10px;border-radius:5px;transition:all 1s;width:100%;text-transform:uppercase;font-weight:500}
 #serBlock .container .services #serList span:hover {cursor: pointer;}
 #serBlock .container .services #serList span.activeTab {color:white;background-color:#1EB6A9;cursor:pointer;}
 
-#serBlock .container #serTab .detailInner {width:100%;min-height:350px;background-color:#2A2F33;color:white;padding:30px;border-radius:5px;text-align:center;}
-#serBlock .container #serTab h2{margin-bottom:15px;}
+#serBlock .container #serTab .detailInner {display:flex;flex-direction:column;justify-content:center;align-items:center;gap:20px;padding:30px;width:100%;min-height:345px;background-color:#2A2F33;color:white;border-radius:5px;text-align:center;}
 
 .serActive {color:black;background-color:#badfe7;box-shadow:5px 5px 25px #1e1b1b;transition:2s;}
 
 /*Testimonials Styles*/
-.testiBlock {width:100%;display:flex;align-items:stretch;background:#1EB6A9;}
+.testiBlock {display:flex;align-items:center;justify-content:center;background:#1EB6A9;}
 .testiBlock .col {width:50%;display:flex;align-items:left;justify-content:center;flex-direction:column;}
 .testiBlock .col.leftBlck {color:#fff;gap:30px;padding:50px;}
 .testiBlock .col.leftBlck h1 {font-size:40px;font-weight:800;position:relative;padding-bottom:20px;}
@@ -75,7 +70,7 @@
 .testiBlock .col.rightBlck img {width:100%;}
 
 #footerBlock {width:100%;background:white;padding:50px;font-weight:500;}
-#footerBlock .container {gap:20px;justify-content:flex-start;text-align:left;}
+#footerBlock .container {gap:20px;text-align:left;}
 #footerBlock .col {width:100%;max-width:33%;}
 #footerBlock .container {justify-content:center;padding:20px 0px;color:#181818;}
 #footerBlock h2 {font-weight:500;font-size:20px;text-transform:uppercase;margin-bottom:10px;}
