@@ -42,15 +42,22 @@ let custName = document.getElementById('custName');
 let custReply = document.getElementById('custReply');
 
 Array.from(serList).forEach(function(element){
-    element.addEventListener('mouseover',showService);
-    element.addEventListener('mouseleave',resetService);
+    element.addEventListener('click',showService);
+    element.addEventListener('blur',resetService);
 })
 
 function showService(e){
+  Array.from(serList).forEach(function(element){
+    element.classList.remove('activeTab')
+  })
   let currElem = document.getElementById(e.target.id);
+  console.log(currElem);
+  currElem.classList.add('activeTab');
+  console.log(currElem);
   let currElemText = currElem.innerText;
   serTabHead.innerText = currElemText;
   serTabContent.innerHTML = services[e.target.id];
+  // currElem.addEventListener('blur',resetService(e.target));
 }
 
 
@@ -97,6 +104,9 @@ function serviceAutoStop(){
 
 
 function resetService(){
+  Array.from(serList).forEach(function(element){
+    element.classList.remove('activeTab')
+  })
   serTabHead.innerText = 'Top Notch Services';
   serTabContent.innerHTML = 'Helping People Shift<br/>Since 2019';
 }
