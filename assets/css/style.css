@@ -51,7 +51,7 @@
 #serBlock .container {display:flex;justify-content:space-evenly;align-items:center;gap:40px;}
 #serBlock .container h1{margin-bottom:25px;font-weight:800;color:#1EB6A9;}
 #serBlock .container .services #serList {width:100%;display:flex;flex-direction:column;gap:10px;}
-#serBlock .container .services #serList span {color:white;display:block;background-color:#ccc;color:#000;padding:15px 10px;border-radius:5px;transition:all 1s;width:100%;text-transform:uppercase;font-weight:500}
+#serBlock .container .services #serList span {color:white;display:block;background-color:#ccc;color:#000;padding:15px 10px;border-radius:5px;transition:all 0.7s;width:100%;text-transform:uppercase;font-weight:500;width:500px;}
 #serBlock .container .services #serList span:hover {cursor: pointer;}
 #serBlock .container .services #serList span.activeTab {color:white;background-color:#1EB6A9;cursor:pointer;}
 
@@ -60,7 +60,7 @@
 .serActive {color:black;background-color:#badfe7;box-shadow:5px 5px 25px #1e1b1b;transition:2s;}
 
 /*Testimonials Styles*/
-#testiBlock {display:flex;background:#1EB6A9;}
+#testiBlock {display:flex;background:#1EB6A9;align-items:center;}
 #testiBlock .col {width:50%;display:flex;justify-content:center;flex-direction:column;}
 #testiBlock .col.leftBlock {color:#fff;gap:30px;padding:50px;}
 #testiBlock .col.leftBlock h1 {font-size:40px;font-weight:800;padding-bottom:20px;}
@@ -68,6 +68,7 @@
 #testiBlock .col.leftBlock .custRev h2 {font-size:25px;}
 #testiBlock .col.leftBlock .custRev p {font-size:20px;}
 
+.hiddenPara {display:none;}
 
 /*Footer Block*/
 #footerBlock {width:100%;background:white;padding:50px;font-weight:500;}
@@ -120,9 +121,10 @@
     #testiBlock .overlayBg {position:absolute;width:100%;height:100%;top:0;left:0;background:rgba(0, 0, 0, 0.4);z-index:1;}
     #testiBlock .rightBlock {width:100%;}
     #testiBlock .leftBlock {position:absolute;width:100%;z-index:2;text-align:center;}
+    #serTab {display:none;}
     #footerBlock .container {flex-direction:column-reverse;}
 
-
+    .hiddenPara {display:block;background-color:#181818;padding:25px;margin:15px;border-radius:5px;max-width:500px;}
     /* For Hamburger Menu*/
     .navigation {display:none;}
     #hamburger {display:inline-block;}

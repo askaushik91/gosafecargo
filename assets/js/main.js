@@ -33,7 +33,7 @@ let i=0; // For review automatic movement
 showRev();
 // serviceAuto();
 
-
+let serTab = document.getElementById('serTab')
 let serList = document.getElementsByClassName('indiService');
 let serTabHead = document.getElementById('serTabHead');
 let serTabContent = document.getElementById('serTabContent');
@@ -50,14 +50,24 @@ function showService(e){
   Array.from(serList).forEach(function(element){
     element.classList.remove('activeTab')
   })
+  document.querySelectorAll('.hiddenPara').forEach(function(element){
+    element.style.display = 'none';
+  })
   let currElem = document.getElementById(e.target.id);
-  console.log(currElem);
   currElem.classList.add('activeTab');
-  console.log(currElem);
   let currElemText = currElem.innerText;
   serTabHead.innerText = currElemText;
   serTabContent.innerHTML = services[e.target.id];
-  // currElem.addEventListener('blur',resetService(e.target));
+  let elem = document.createElement('div');
+  elem.className = 'hiddenPara';
+  let elemHead = document.createElement('h2');
+  let elemPara = document.createElement('p');
+  // elemHead.innerText = currElem.innerText;
+  elemPara.innerHTML = services[e.target.id];
+  elem.append(elemHead);
+  elem.append(elemPara);
+  currElem.append(elem);
+  console.log(elem)
 }
 
 
@@ -134,3 +144,4 @@ $(document).ready(function(){
       else($('#headerBlock').removeClass("sticky"))
   });
 });
+
