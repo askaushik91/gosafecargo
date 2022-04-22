@@ -2,6 +2,7 @@
 
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
+
 * {
     box-sizing:border-box;
     -moz-box-sizing:border-box;
@@ -46,8 +47,8 @@
 
 /*Services Styles*/
 #serBlock {background-color:#fff;padding:100px 0px;}
-#serBlock .container #serTab {width:100%;max-width:75%;margin-top:61px;}
-#serBlock .container {display:flex;justify-content:space-evenly;align-items:center;}
+#serBlock .container #serTab {width:100%;max-width:70%;margin-top:61px;}
+#serBlock .container {display:flex;justify-content:space-evenly;align-items:center;gap:40px;}
 #serBlock .container h1{margin-bottom:25px;font-weight:800;color:#1EB6A9;}
 #serBlock .container .services #serList {width:100%;display:flex;flex-direction:column;gap:10px;}
 #serBlock .container .services #serList span {color:white;display:block;background-color:#ccc;color:#000;padding:15px 10px;border-radius:5px;transition:all 1s;width:100%;text-transform:uppercase;font-weight:500}
@@ -59,23 +60,21 @@
 .serActive {color:black;background-color:#badfe7;box-shadow:5px 5px 25px #1e1b1b;transition:2s;}
 
 /*Testimonials Styles*/
-.testiBlock {display:flex;align-items:center;justify-content:center;background:#1EB6A9;}
-.testiBlock .col {width:50%;display:flex;align-items:left;justify-content:center;flex-direction:column;}
-.testiBlock .col.leftBlck {color:#fff;gap:30px;padding:50px;}
-.testiBlock .col.leftBlck h1 {font-size:40px;font-weight:800;position:relative;padding-bottom:20px;}
-.testiBlock .col.leftBlck h1:after {position:absolute;content:'';left:0;bottom:0;width:100px;height:2px;background:#fff;;}
-.testiBlock .col.leftBlck .custRev {width:100%;min-height:100px;}
-.testiBlock .col.leftBlck .custRev h2 {font-size:25px;}
-.testiBlock .col.leftBlck .custRev p {font-size:20px;}
-.testiBlock .col.rightBlck img {width:100%;}
+#testiBlock {display:flex;background:#1EB6A9;}
+#testiBlock .col {width:50%;display:flex;justify-content:center;flex-direction:column;}
+#testiBlock .col.leftBlock {color:#fff;gap:30px;padding:50px;}
+#testiBlock .col.leftBlock h1 {font-size:40px;font-weight:800;padding-bottom:20px;}
+#testiBlock .col.leftBlock .custRev {width:100%;min-height:100px;}
+#testiBlock .col.leftBlock .custRev h2 {font-size:25px;}
+#testiBlock .col.leftBlock .custRev p {font-size:20px;}
 
+
+/*Footer Block*/
 #footerBlock {width:100%;background:white;padding:50px;font-weight:500;}
-#footerBlock .container {gap:20px;text-align:left;}
-#footerBlock .col {width:100%;max-width:33%;}
-#footerBlock .container {justify-content:center;padding:20px 0px;color:#181818;}
+#footerBlock .container {gap:40px;justify-content:space-between;color:#181818;padding:20px 0px;}
 #footerBlock h2 {font-weight:500;font-size:20px;text-transform:uppercase;margin-bottom:10px;}
 #footerBlock h5 {font-weight:500;font-size:16px;text-transform:uppercase;}
-#footerBlock ol {display:flex;gap:10px;margin-bottom:20px;}
+#footerBlock ol {display:flex;gap:10px;margin-bottom:10px;}
 #footerBlock ol li {font-size:18px;}
 #footerBlock ul li {line-height:30px;}
 #footerBlock a {color:#181818;}
@@ -109,13 +108,20 @@
 .contactBanner ul li:nth-of-type(4) a:hover {color:#FF0000;}
 
 
-@media screen and (max-width:812px)
+@media screen and (max-width:1050px)
 {
     #headerBlock .container, #preFooterBlock .container {flex-direction:row;}
     .container {flex-direction:column;min-height:auto!important;gap:50px;}
     #bannerBlock {padding-top:100px !important;;}
     #bannerBlock, #serBlock, #testBlock {padding:50px 0px;}
     #bannerBlock .container, #testBlock .container {flex-direction:column-reverse;}
+
+    #testiBlock{position:relative;}
+    #testiBlock .overlayBg {position:absolute;width:100%;height:100%;top:0;left:0;background:rgba(0, 0, 0, 0.4);z-index:1;}
+    #testiBlock .rightBlock {width:100%;}
+    #testiBlock .leftBlock {position:absolute;width:100%;z-index:2;text-align:center;}
+    #footerBlock .container {flex-direction:column-reverse;}
+
 
     /* For Hamburger Menu*/
     .navigation {display:none;}

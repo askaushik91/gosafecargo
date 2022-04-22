@@ -2,7 +2,7 @@
 let services = {
   corporate : 'We are the fastest growing corporate shifter in India and Big brands trust us for their shifting needs.',
   car : 'Want your cars to be transported somewhere else?<br>Guess what, We do that too.',
-  transport : 'We have partenered with the best transportation services in India and we operate pan India.',
+  bike : 'Well not just cars we transport bikes too<br>So what are you waiting for?',
   warehouse : 'We are here for all your warehousing needs as well.',
   household : 'Shifting to new house?<br> Well we are here to help you to shift with extra care.',
   packing : 'You name it.<br>We pack and ship it.<br>Right at your doorstep.',
