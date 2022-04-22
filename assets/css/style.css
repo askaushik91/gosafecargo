@@ -51,7 +51,7 @@
 #serBlock .container {display:flex;justify-content:space-evenly;align-items:center;gap:40px;}
 #serBlock .container h1{margin-bottom:25px;font-weight:800;color:#1EB6A9;}
 #serBlock .container .services #serList {width:100%;display:flex;flex-direction:column;gap:10px;}
-#serBlock .container .services #serList span {color:white;display:block;background-color:#ccc;color:#000;padding:15px 10px;border-radius:5px;transition:all 0.7s;width:100%;text-transform:uppercase;font-weight:500;width:500px;}
+#serBlock .container .services #serList span {color:white;display:block;background-color:#ccc;color:#000;padding:15px 10px;border-radius:5px;transition:all 0.7s;width:100%;text-transform:uppercase;font-weight:500;}
 #serBlock .container .services #serList span:hover {cursor: pointer;}
 #serBlock .container .services #serList span.activeTab {color:white;background-color:#1EB6A9;cursor:pointer;}
 
