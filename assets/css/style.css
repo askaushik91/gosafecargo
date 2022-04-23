@@ -14,10 +14,7 @@
     outline:none!important;
 }
 
-
-
 .container {width:95%;max-width:1170px;margin:0 auto;display:flex;}
-
 
 /*Header Styles*/
 #headerBlock {background-color:#2A2F33;color:white;width:100%;position:fixed;top:0;z-index:99;}
@@ -80,19 +77,17 @@
 #footerBlock a:hover {color:#1EB6A9;}
 
 /*About Page*/
-.aboutBanner .overlayBg {background:rgba(0,0,0,.5)!important;}
-.aboutParagraph {padding: 30px;
+.aboutBanner .overlayBg {
+    background:rgba(0,0,0,.5)!important;
+}
+.aboutParagraph {
+    padding: 30px;
     color: white;
     font-size: 18px;
-    line-height: 30px;}
-
-/*Gallery Page*/
-@keyframes fadeIn {
-    0% {opacity:0;}
-    50% {opacity:1;}
-    100% {opacity:0;}
+    line-height: 30px;
 }
 
+/*Gallery Page*/
 #galleryImage {opacity:1;transition:opacity 1s;border-radius:0!important;width:100%;}
 #galleryImage.fadeOut {opacity:0;}
 
@@ -133,7 +128,7 @@
     #serTab {display:none;}
     #footerBlock .container {flex-direction:column-reverse;}
 
-    .hiddenPara {display:block;background-color:#181818;padding:25px;margin:15px;border-radius:5px;max-width:500px;min-height:120px;}
+    .hiddenPara {display:block;background-color:#181818;padding:25px;margin:15px;border-radius:5px;max-width:500px;min-height:120px;text-transform:none;}
     /* For Hamburger Menu*/
     #headerBlock .container .rightHeader .navigation {position:fixed;background:#0d0e0f;right:-100%;visibility:hidden;opacity:0;height:calc(100% - 90px);top:90px;width:100%;transition:all .5s ease;z-index:999;}
 
