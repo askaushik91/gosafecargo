@@ -20,10 +20,8 @@
 
 
 /*Header Styles*/
-.sticky {position:fixed;top:0;left:0;z-index:99;}
-
-#headerBlock {background-color:#2A2F33;color:white;width:100%;}
-#headerBlock .container{justify-content:space-between;align-items:center;padding:20px 0;}
+#headerBlock {background-color:#2A2F33;color:white;width:100%;position:fixed;top:0;z-index:99;}
+#headerBlock .container{justify-content:space-between;align-items:center;padding:16.83px 0;}
 #headerBlock .container .leftHeader svg {width:150px;}
 #headerBlock .container .rightHeader ul {display:flex;gap:25px;}
 #headerBlock .container .rightHeader ul li a{color:white;transition:color 0.5s;}
@@ -31,7 +29,7 @@
 #hamburger {font-size:20px;margin-right:10px;color:white;display:none;}
 
 /*Banner Styles*/
-#bannerBlock {background-color:#1EB6A9;padding-top:0px;background:url(../media/images/industrial-port-container-yard.jpg) no-repeat;background-size:cover;position: relative;background-attachment:fixed;}
+#bannerBlock {background-color:#1EB6A9;padding-top:0px;background:url(../media/images/industrial-port-container-yard.jpg) no-repeat;background-size:cover;position: relative;background-attachment:fixed;margin-top:80px;}
 #bannerBlock .overlayBg {position:absolute;width:100%;height:100%;top:0;left:0;background:rgba(0,0,0,.3);z-index:1;}
 #bannerBlock .container {display:flex;justify-content:space-evenly;align-items:center;min-height:90vh;position:relative;z-index:9;}
 #bannerBlock .container .bannerImg img{width:100%;max-width:400px;object-fit:cover;border-radius:50px;box-shadow:5px 5px 25px #1e1b1b;}
@@ -82,7 +80,11 @@
 #footerBlock a:hover {color:#1EB6A9;}
 
 /*About Page*/
-.aboutParagraph {padding:30px;}
+.aboutBanner .overlayBg {background:rgba(0,0,0,.5)!important;}
+.aboutParagraph {padding: 30px;
+    color: white;
+    font-size: 18px;
+    line-height: 30px;}
 
 /*Gallery Page*/
 @keyframes fadeIn {
@@ -108,7 +110,6 @@
 .contactBanner ul li:nth-of-type(3) a:hover {color:#8a3ab9;}
 .contactBanner ul li:nth-of-type(4) a:hover {color:#FF0000;}
 
-
 @media screen and (max-width:1050px)
 {
     #headerBlock .container, #preFooterBlock .container {flex-direction:row;}
@@ -127,10 +128,17 @@
 
     .hiddenPara {display:block;background-color:#181818;padding:25px;margin:15px;border-radius:5px;max-width:500px;min-height:120px;}
     /* For Hamburger Menu*/
-    .navigation {display:none;}
+    #headerBlock .container .rightHeader .navigation {position:fixed;background:#0d0e0f;right:-100%;visibility:hidden;opacity:0;height:calc(100% - 90px);top:90px;width:100%;transition:all .5s ease;z-index:999;}
+
+    #headerBlock .container .rightHeader .navigation ul {flex-direction:column;gap:0;}
+    #headerBlock .container .rightHeader .navigation ul li a {padding:15px;display:block;font-size:18px;border-bottom:1px solid rgba(255,255,255,.5);}
+    #headerBlock .container .rightHeader .navigation ul li:last-child a {border-bottom:0;}
+
+    #headerBlock .container .rightHeader .navigation.navActive {right:0;visibility:visible;opacity:1;}
+
     #hamburger {display:inline-block;}
     #headerBlock .container {position:relative;}
-    #headerBlock .container .rightHeader ul {background:#2A2F33;display:block;position:absolute;right:0px;padding:40px;}
+    /* #headerBlock .container .rightHeader ul {background:#2A2F33;display:block;position:absolute;right:0px;padding:40px;} */
     
     /*Other Pages CSS*/
     .galleryBanner .container, .contactBanner .container {flex-direction:column !important;}
@@ -138,4 +146,6 @@
     .contactBanner .container {min-height:80vh !important;}
     .aboutBanner .container {min-height:64vh !important;}
     .contactBanner address {text-align:center;}
+
+    #serBlock .col.services {width:100%;display:block;}
 }
