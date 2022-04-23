@@ -93,11 +93,16 @@
     100% {opacity:0;}
 }
 
-#galleryImage {opacity:1;transition:opacity 1s;}
+#galleryImage {opacity:1;transition:opacity 1s;border-radius:0!important;width:100%;}
 #galleryImage.fadeOut {opacity:0;}
 
+.galleryItems {padding:80px 0 0 0;}
+.galleryItems ul {display:flex;gap:20px;flex-wrap:wrap;}
+.galleryItems ul li {flex:30%;}
+.galleryItems ul li img {width:100%;border-radius:10px;}
+
 /*Contact Page*/
-.contactBanner {padding:40px 0px;}
+/* .contactBanner {padding:40px 0px;}
 .contactBanner .container {gap:30px !important;}
 .contactBanner .container address a{color:black;transition:color 0.5s;}
 .contactBanner .container address a:hover{color:#EA9A28;}
@@ -108,7 +113,9 @@
 .contactBanner ul li:nth-of-type(1) a:hover {color:#ff8800;}
 .contactBanner ul li:nth-of-type(2) a:hover {color:#00acee;}
 .contactBanner ul li:nth-of-type(3) a:hover {color:#8a3ab9;}
-.contactBanner ul li:nth-of-type(4) a:hover {color:#FF0000;}
+.contactBanner ul li:nth-of-type(4) a:hover {color:#FF0000;} */
+
+.contactDetails {margin-top:130px;}
 
 @media screen and (max-width:1050px)
 {
