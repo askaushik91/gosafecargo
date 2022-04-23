@@ -53,21 +53,21 @@ function showService(e){
   document.querySelectorAll('.hiddenPara').forEach(function(element){
     element.style.display = 'none';
   })
+
+
   let currElem = document.getElementById(e.target.id);
   currElem.classList.add('activeTab');
   let currElemText = currElem.innerText;
   serTabHead.innerText = currElemText;
   serTabContent.innerHTML = services[e.target.id];
+
+
   let elem = document.createElement('div');
   elem.className = 'hiddenPara';
-  let elemHead = document.createElement('h2');
   let elemPara = document.createElement('p');
-  // elemHead.innerText = currElem.innerText;
   elemPara.innerHTML = services[e.target.id];
-  elem.append(elemHead);
   elem.append(elemPara);
   currElem.append(elem);
-  console.log(elem)
 }
 
 
@@ -135,13 +135,3 @@ function showRev(){
     }
   },3000);
 }
-
-$(document).ready(function(){
-  $(window).scroll(function(){
-      if($(this).scrollTop() > 1){
-          $('#headerBlock').addClass('sticky')
-      }
-      else($('#headerBlock').removeClass("sticky"))
-  });
-});
-
