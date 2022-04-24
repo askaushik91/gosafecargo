@@ -14,6 +14,7 @@
     outline:none!important;
 }
 
+
 .container {width:95%;max-width:1170px;margin:0 auto;display:flex;}
 
 /*Header Styles*/
@@ -49,7 +50,6 @@
 #serBlock .container .services #serList span {color:white;display:block;background-color:#ccc;color:#000;padding:15px 10px;border-radius:5px;transition:all 0.7s;width:100%;text-transform:uppercase;font-weight:500;}
 #serBlock .container .services #serList span:hover {cursor: pointer;}
 #serBlock .container .services #serList span.activeTab {color:white;background-color:#1EB6A9;cursor:pointer;}
-
 #serBlock .container #serTab .detailInner {display:flex;flex-direction:column;justify-content:center;align-items:center;gap:20px;padding:30px;width:100%;min-height:345px;background-color:#2A2F33;color:white;border-radius:5px;text-align:center;}
 
 .serActive {color:black;background-color:#badfe7;box-shadow:5px 5px 25px #1e1b1b;transition:2s;}
@@ -76,6 +76,11 @@
 #footerBlock a {color:#181818;}
 #footerBlock a:hover {color:#1EB6A9;}
 
+/* #footerBlock a[href*="facebook"]:hover {color:#4267B2;}
+#footerBlock a[href*="instagram"]:hover {color:#833AB4;}
+#footerBlock a[href*="twitter"]:hover {color:#00acee;}
+#footerBlock a[href*="linkedin"]:hover {color:#0077b5;} */
+
 /*About Page*/
 .aboutBanner .overlayBg {
     background:rgba(0,0,0,.5)!important;
@@ -90,26 +95,10 @@
 /*Gallery Page*/
 #galleryImage {opacity:1;transition:opacity 1s;border-radius:0!important;width:100%;}
 #galleryImage.fadeOut {opacity:0;}
-
 .galleryItems {padding:80px 0 0 0;}
 .galleryItems ul {display:flex;gap:20px;flex-wrap:wrap;}
 .galleryItems ul li {flex:30%;}
 .galleryItems ul li img {width:100%;border-radius:10px;}
-
-/*Contact Page*/
-/* .contactBanner {padding:40px 0px;}
-.contactBanner .container {gap:30px !important;}
-.contactBanner .container address a{color:black;transition:color 0.5s;}
-.contactBanner .container address a:hover{color:#EA9A28;}
-.contactBanner .container h1 {margin-bottom:20px;}
-.contactBanner .container .col {min-height:150px;}
-.contactBanner ul li i {margin-right:10px;width:20px;}
-.contactBanner ul li a {color:black;transition:color 0.5s;}
-.contactBanner ul li:nth-of-type(1) a:hover {color:#ff8800;}
-.contactBanner ul li:nth-of-type(2) a:hover {color:#00acee;}
-.contactBanner ul li:nth-of-type(3) a:hover {color:#8a3ab9;}
-.contactBanner ul li:nth-of-type(4) a:hover {color:#FF0000;} */
-
 .contactDetails {margin-top:130px;}
 
 @media screen and (max-width:1050px)
@@ -140,7 +129,6 @@
 
     #hamburger {display:inline-block;}
     #headerBlock .container {position:relative;}
-    /* #headerBlock .container .rightHeader ul {background:#2A2F33;display:block;position:absolute;right:0px;padding:40px;} */
     
     /*Other Pages CSS*/
     .galleryBanner .container, .contactBanner .container {flex-direction:column !important;}
