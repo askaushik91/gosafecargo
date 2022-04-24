@@ -36,7 +36,7 @@
 #bannerBlock .container .bannerForm form h2{margin-bottom:30px;}
 #bannerBlock .container .bannerForm form .formInner ul {display:flex;flex-direction:column;gap:15px;}
 #bannerBlock .container .bannerForm form label {display:inline-block;width:100%;max-width:100%;margin-bottom:7px;}
-#bannerBlock .container .bannerForm form input {width:100%;border-radius:5px;padding:10px 3px;border:none;background:rgba(255,255,255,.1);}
+#bannerBlock .container .bannerForm form input {width:100%;border-radius:5px;padding:10px 3px;border:none;background:rgba(255,255,255,.1);color:#fff!important;}
 #bannerBlock .container .bannerForm form button {background-color:#1EB6A9;border:0;color:white;padding:13px 8px;border-radius:5px;transition:border 0.5s, background-color 0.2s, color 0.5s, border-radius 1s;text-transform:uppercase;width:100%;margin-top:10px;}
 #bannerBlock .container .bannerForm form button:hover {cursor:pointer;color:#1EB6A9;background:#181818;}
 #bannerBlock .container .bannerForm form button:active {background-color:#181818;color:#1EB6A9;}
@@ -103,9 +103,9 @@
 .contactDetails {margin-top:130px;}
 
 /* Clients Page */
-#clientsPage .bannerSec {background:#1EB6A9;text-align:center;margin-top:80px;padding:60px 0;color:white;}
-#clientsPage .bannerSec h2 {font-size:35px;}
-#clientsPage .bannerSec p {font-size:18px;}
+#clientsPage .bannerSec {background:#1EB6A9;text-align:center;margin-top:80px;padding:80px 0 30px 0;color:white;}
+#clientsPage .bannerSec h2 {font-size:30px;color:#fff;text-align:center;margin-bottom:60px;position:relative;padding-bottom:20px;}
+#clientsPage .bannerSec h2:after {background:#fff;width:100px;height:2px;position:absolute;content:'';bottom:0;left:50%;transform:translateX(-50%);}
 #clientsPage .clientsSection {padding:50px 0 70px 0;border-bottom:1px solid rgba(0,0,0,.2);}
 #clientsPage .clientsSection .container {flex-direction:column;}
 #clientsPage .clientsSection h1 {font-size:30px;color:#181818;text-align:center;margin-bottom:60px;position:relative;padding-bottom:20px;}
@@ -123,12 +123,9 @@
     #bannerBlock {padding-top:100px !important;;}
     #bannerBlock, #serBlock, #testBlock {padding:50px 0px;}
     #bannerBlock .container, #testBlock .container {flex-direction:column-reverse;}
-
-    /* #testiBlock{position:relative;}
-    #testiBlock .overlayBg {position:absolute;width:100%;height:100%;top:0;left:0;background:rgba(0, 0, 0, 0.4);z-index:1;}
-    #testiBlock .rightBlock {width:100%;}
-    #testiBlock .rightBlock img{filter:blur(1px);}
-    #testiBlock .leftBlock {position:absolute;width:100%;z-index:2;text-align:center;} */
+    #headerBlock .container .rightHeader .navigation ul li a:hover {
+        background: black;
+    }
     #serTab {display:none;}
     #footerBlock .container {flex-direction:column-reverse;}
 
@@ -174,6 +171,8 @@
     #testiBlock .col.leftBlock {width:70%;padding:0;}
     #testiBlock .col.leftBlock h1 {font-size: 30px;}
     #testiBlock .col.leftBlock .custRev {width: 100%;min-height: 140px;}
+    #galleryImage {height: 464px;}
+    #clientsPage .clientsSection #clientsContentDiv .individualReview {width:100%;}
 }
 
 @media screen and (max-width:600px)
@@ -181,4 +180,12 @@
     #bannerBlock .container .bannerImg h1 {font-size:30px;}
     #bannerBlock .container .bannerImg h1 br {display:none;}
     #bannerBlock {padding-top: 70px !important;}
+    #footerBlock {padding: 20px;}
+}
+
+@media screen and (max-width:450px)
+{
+    #galleryImage {height:300px;}
+    .galleryItems {padding:60px 0 0 0;}
+    .galleryItems ul li {flex:100%;}
 }
