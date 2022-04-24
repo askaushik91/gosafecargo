@@ -93,13 +93,28 @@
 }
 
 /*Gallery Page*/
-#galleryImage {opacity:1;transition:opacity 1s;border-radius:0!important;width:100%;}
+.galleryBanner {margin-top:90px;}
+#galleryImage {opacity:1;transition:opacity 1s;border-radius:0!important;width:100%;height:650px;object-fit:cover;}
 #galleryImage.fadeOut {opacity:0;}
 .galleryItems {padding:80px 0 0 0;}
 .galleryItems ul {display:flex;gap:20px;flex-wrap:wrap;}
 .galleryItems ul li {flex:30%;}
 .galleryItems ul li img {width:100%;border-radius:10px;}
 .contactDetails {margin-top:130px;}
+
+/* Clients Page */
+#clientsPage .bannerSec {background:#1EB6A9;text-align:center;margin-top:80px;padding:60px 0;color:white;}
+#clientsPage .bannerSec h2 {font-size:35px;}
+#clientsPage .bannerSec p {font-size:18px;}
+#clientsPage .clientsSection {padding:50px 0 70px 0;border-bottom:1px solid rgba(0,0,0,.2);}
+#clientsPage .clientsSection .container {flex-direction:column;}
+#clientsPage .clientsSection h1 {font-size:30px;color:#181818;text-align:center;margin-bottom:60px;position:relative;padding-bottom:20px;}
+#clientsPage .clientsSection h1:after {background:#181818;width:100px;height:2px;position:absolute;content:'';bottom:0;left:50%;transform:translateX(-50%);}
+#clientsPage .clientsSection #clientsContentDiv{display:flex;flex-wrap:wrap;gap:25px;flex-direction:row;justify-content:center;}
+#clientsPage .clientsSection #clientsContentDiv .individualReview{width:48%;background:#f7f7f7;padding:20px;border-radius:5px;transition:.3s;}
+#clientsPage .clientsSection #clientsContentDiv .individualReview:hover{background:#1EB6A9;color:white;}
+#clientsPage .clientsSection #clientsContentDiv .individualReview h3 {font-size:22px;margin-bottom:10px;}
+#clientsPage .clientsSection #clientsContentDiv .individualReview p {font-size:18px;}
 
 @media screen and (max-width:1050px)
 {
@@ -109,17 +124,18 @@
     #bannerBlock, #serBlock, #testBlock {padding:50px 0px;}
     #bannerBlock .container, #testBlock .container {flex-direction:column-reverse;}
 
-    #testiBlock{position:relative;}
+    /* #testiBlock{position:relative;}
     #testiBlock .overlayBg {position:absolute;width:100%;height:100%;top:0;left:0;background:rgba(0, 0, 0, 0.4);z-index:1;}
     #testiBlock .rightBlock {width:100%;}
     #testiBlock .rightBlock img{filter:blur(1px);}
-    #testiBlock .leftBlock {position:absolute;width:100%;z-index:2;text-align:center;}
+    #testiBlock .leftBlock {position:absolute;width:100%;z-index:2;text-align:center;} */
     #serTab {display:none;}
     #footerBlock .container {flex-direction:column-reverse;}
 
-    .hiddenPara {display:block;background-color:#181818;padding:25px;margin:15px;border-radius:5px;max-width:500px;min-height:120px;text-transform:none;}
+    .hiddenPara {display:block;background-color:#181818;padding:25px;margin-top:10px;border-radius:5px;width:100%;min-height:120px;text-transform:none;}
+    #serBlock .container .services #serList span {padding: 20px;}
     /* For Hamburger Menu*/
-    #headerBlock .container .rightHeader .navigation {position:fixed;background:#0d0e0f;right:-100%;visibility:hidden;opacity:0;height:calc(100% - 90px);top:90px;width:100%;transition:all .5s ease;z-index:999;}
+    #headerBlock .container .rightHeader .navigation {position:fixed;background:#1eb6a9;right:-100%;visibility:hidden;opacity:0;height:calc(100% - 90px);top:90px;width:100%;transition:all .5s ease;z-index:999;}
 
     #headerBlock .container .rightHeader .navigation ul {flex-direction:column;gap:0;}
     #headerBlock .container .rightHeader .navigation ul li a {padding:15px;display:block;font-size:18px;border-bottom:1px solid rgba(255,255,255,.5);}
@@ -138,4 +154,31 @@
     .contactBanner address {text-align:center;}
 
     #serBlock .col.services {width:100%;display:block;}
+
+    #serBlock .container .services #serList span.activeTab {font-weight:700;}
+    #serBlock .container .services #serList span.activeTab .hiddenPara {font-weight:normal;}
+}
+
+@media screen and (max-width:1024px)
+{
+    #testiBlock .col.rightBlock img {height: 400px;object-fit: cover;}
+}
+
+@media screen and (max-width:768px)
+{
+    #testiBlock .col.rightBlock {display:none;}
+    #testiBlock {background:url('../media/images/testimonial.jpg') no-repeat;background-size:cover;background-position:center;padding:20px;}
+    #testiBlock .overlayBg {width:100%;height:100%;position:absolute;left:0;top:0;background:rgba(0,0,0,.6);z-index:1;}
+    #testiBlock .col {position:relative;z-index:9;}
+    #testiBlock {position:relative;}
+    #testiBlock .col.leftBlock {width:70%;padding:0;}
+    #testiBlock .col.leftBlock h1 {font-size: 30px;}
+    #testiBlock .col.leftBlock .custRev {width: 100%;min-height: 140px;}
+}
+
+@media screen and (max-width:600px)
+{
+    #bannerBlock .container .bannerImg h1 {font-size:30px;}
+    #bannerBlock .container .bannerImg h1 br {display:none;}
+    #bannerBlock {padding-top: 70px !important;}
 }
